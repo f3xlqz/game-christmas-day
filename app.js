@@ -10,7 +10,7 @@ let gameCards = [...cardsArray, ...cardsArray];
 let flippedCards = [];
 let matchedCards = [];
 let timer;
-let timeLeft = 30;
+let timeLeft = 20;
 
 startButton.addEventListener("click", startGame);
 resetButton.addEventListener("click", resetGame);
@@ -21,7 +21,7 @@ function startGame() {
     gameBoard.classList.remove("hidden");
     resultDisplay.classList.add("hidden");
     effectDisplay.classList.add("hidden");
-    timeLeft = 30;
+    timeLeft = 20;
     timerDisplay.textContent = timeLeft;
 
     shuffle(gameCards);
@@ -98,7 +98,7 @@ function resetGame() {
     resetButton.classList.add("hidden");
     gameBoard.classList.add("hidden");
     resultDisplay.classList.add("hidden");
-    timerDisplay.textContent = "30";
+    timerDisplay.textContent = "20";
 }
 
 function shuffle(array) {
